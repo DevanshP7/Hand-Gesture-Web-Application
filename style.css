@@ -1,0 +1,22 @@
+.heading{
+    border-radius: 20px;
+    padding:10px;
+    font-size: 60px;
+    font-family: cursive;
+}
+
+p{
+    font-family: 'Tangerine', serif;
+}
+
+label{
+    font-family: 'Cormorant Garamond', cursive;
+    font-size: 30px;
+    background-color: aquamarine;
+    color: blueviolet;
+    border-radius: 20px;
+}
+
+body{
+    background-image: linear-gradient(rgb(60, 182, 253),rgb(180, 215, 255),rgb(198, 239, 255));
+}

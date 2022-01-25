@@ -1,0 +1,70 @@
+<html>
+  <head>
+    <title>Hand Gesture Web App</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&amp;display=swap&amp;_cacheOverride=1643100133373" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&amp;display=swap&amp;_cacheOverride=1643100133371" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body>
+  <div class="container">
+    <center>
+      <h3 class="btn btn-warning heading">Hand Gesture Web App<br>
+      <span>&#128076;</span>
+      <span>&#128077;</span>
+      <span>&#9996;</span>
+      <span>&#9994;</span>
+      <span>&#128079;</span>
+      <span>&#129304;</span>
+      </h3>
+
+      <br><br>
+      
+      <p style="font-size: 42px;">Take a selfie of a gesture to know about its meaning.
+      	<br>
+        <b style="color: rgb(0, 255, 234)">On the following gestures the model is trained.</b>
+        <br>
+        <span>&#128076;</span>
+        <span>&#128077;</span>
+        <span>&#9996;</span>
+        <span>&#128078;</span>
+        <span>&#128075;</span>
+        <br>
+      </p>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	    <label>Webcam View - </label>
+        <div id="webcam_div"></div>
+        <br><br>
+        <button type="button" class="btn btn-info" onclick="take_snapshot()" id="button_snapshot">Take Snapshot</button>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+        <label>Prediction - 1</label>
+        <h2 class="emotion_name" id="prediction_1"></h2>
+        <p class="emoji" id="emoji_1"></p>
+        <br>
+      </div>
+
+      <div class="col-md-4 col-sm-12 col-xs-12">
+	      <label>Snapshot - </label>
+        <div id="result_div"></div>
+        <br><br>
+        <button type="button" class="btn btn-success" onclick="check()" id="button_check">Identify</button>
+      </div>
+    </center>
+  </div>
+  <script src="main.js"></script>
+  </body>
+</html>
