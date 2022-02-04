@@ -12,11 +12,16 @@ p{
 label{
     font-family: 'Cormorant Garamond', cursive;
     font-size: 30px;
-    background-color: aquamarine;
-    color: blueviolet;
+    background-color: rgba(158, 232, 255, 0);
+    color: rgb(117, 31, 197);
     border-radius: 20px;
+    padding: 10px;
 }
 
 body{
     background-image: linear-gradient(rgb(60, 182, 253),rgb(180, 215, 255),rgb(198, 239, 255));
+}
+
+#emoji_1{
+    font-size: 40px;
 }
