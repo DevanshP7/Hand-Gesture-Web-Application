@@ -1,4 +1,3 @@
-// https://teachablemachine.withgoogle.com/models/ijNGB15Oq/
 prediction = "";
 
 quote = "";
